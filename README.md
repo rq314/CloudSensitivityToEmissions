@@ -16,9 +16,18 @@ Here will be included the code repository for the combined plume-parcel model, a
 
 ## Generating output files:
 
-Navigate to source directory:
+Create the following directories
 ```
-cd /CloudSensitivityToEmissions/src/
+mkdir data/processed
+mkdir data/raw
+mkdir figs
+```
+
+Add the `only_track_data_ctrc_anonymous.csv` file to `data/raw`
+
+Navigate to the source directory:
+```
+cd src
 ```
 
 ### To run ARG:
