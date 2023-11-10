@@ -83,67 +83,6 @@ def plot_coupled_correlations(paper_figures_dir, dfs, legend_labels, colors, plo
 
 
 
-    # for df, lb, color in zip(dfs, legend_labels, colors):
-
-    #     axs[0].scatter(df["epsilon_param"], df["epsilon_obs"], s=scattersize, color=color, alpha=0.7,
-    #                     label=rf"{lb} ($r^2 ={df['epsilon_obs'].corr(df['epsilon_param']) ** 2:.2f})$")
-    #     print(f"r2{lb}", df['epsilon_obs'].corr(df['epsilon_param'])**2)
-
-
-    # axs[0].plot(np.linspace(0, 10, 100), np.linspace(0, 10, 100) , color='r', linewidth=2)
-    # axs[0].plot(np.linspace(-2, 8, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-    # axs[0].plot(np.linspace(2, 12, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-
-    # axs[0].text(0.11, 1.08, labels_subplots[0], transform=axs[0].transAxes, fontsize=fontsize, fontweight='bold', va='top', ha='right')
-    # axs[0].axis(xmin=0, xmax=12, ymin=0, ymax=12)
-    # # axs[0].set_xlabel(r'$\epsilon$ (parameterised)[-]',fontsize=fontsize)
-    # axs[0].set_ylabel(r'$\epsilon$ (observed)[-]',fontsize=fontsize)
-    # axs[0].tick_params(axis='both', labelsize=fontsize)
-    # axs[0].set_aspect('equal', 'box')
-    # axs[0].set_xticks([])
-    # axs[0].legend()
-    
-
-    # for df, lb, color in zip(dfs, legend_labels, colors):
-    #     axs[1].scatter(df["epsilon_param_ctrc"], df["epsilon_obs"], s= scattersize, color=color, alpha=0.7,
-    #                 label=rf"{lb} ($r^2 ={df['epsilon_obs'].corr(df['epsilon_param_ctrc'])**2:.2f})$")
-
-    #     print(f"r2{lb}", df['epsilon_obs'].corr(df['epsilon_param_ctrc'])**2)
-
-    # axs[1].plot(np.linspace(0, 10, 100), np.linspace(0, 10, 100) , color='r', linewidth=2)
-    # axs[1].plot(np.linspace(-2, 8, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-    # axs[1].plot(np.linspace(2, 12, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-
-    # axs[1].text(0.11, 1.08, labels_subplots[1], transform=axs[1].transAxes, fontsize=fontsize, fontweight='bold', va='top', ha='right')
-    # axs[1].axis(xmin=0, xmax=12, ymin=0, ymax=12)
-    # # axs[1].set_xlabel(r'$\epsilon$ (parameterised)[-]',fontsize=fontsize)
-    # axs[1].set_ylabel(r'$\epsilon$ (observed)[-]',fontsize=fontsize)
-    # axs[1].tick_params(axis='both', labelsize=fontsize)
-    # axs[1].set_aspect('equal', 'box')
-    # axs[1].set_xticks([])
-    # axs[1].legend()
-
-
-    # for df, lb, color in zip(dfs, legend_labels, colors):
-    #     axs[2].scatter(df["epsilon_param_fit"], df["epsilon_obs"], s= scattersize, color=color, alpha=0.7,
-    #                 label=rf"{lb} ($r^2 ={df['epsilon_obs'].corr(df['epsilon_param_fit'])**2:.2f})$")
-
-    #     print(f"r2{lb}", df['epsilon_obs'].corr(df['epsilon_param_fit'])**2)
-
-    # axs[2].plot(np.linspace(0, 10, 100), np.linspace(0, 10, 100) , color='r', linewidth=2)
-    # axs[2].plot(np.linspace(-2, 8, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-    # axs[2].plot(np.linspace(2, 12, 100), np.linspace(0, 10, 100) , color='grey', linewidth=2)
-
-    # axs[2].text(0.11, 1.08, labels_subplots[2], transform=axs[2].transAxes, fontsize=fontsize, fontweight='bold', va='top', ha='right')
-    # axs[2].axis(xmin=0, xmax=12, ymin=0, ymax=12)
-    # axs[2].set_xlabel(r'$\epsilon$ (parameterised)[-]',fontsize=fontsize)
-    # axs[2].set_ylabel(r'$\epsilon$ (observed)[-]',fontsize=fontsize)
-    # axs[2].tick_params(axis='both', labelsize=fontsize)
-    # axs[2].set_aspect('equal', 'box')
-    # axs[2].legend()
-
-
-
     plt.subplots_adjust(wspace=0.6)
 
     plt.savefig(plot_fname(paper_figures_dir, plot_title), dpi=300)
