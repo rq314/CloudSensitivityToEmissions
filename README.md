@@ -74,7 +74,6 @@ python3 generate_sensitivities.py
 The flag `--ncores` can also be added to analyse the database using multiple processes.
 
 ## Generating plots:
-Navigate to source directory:
 ```
 python3 main.py
 ```
