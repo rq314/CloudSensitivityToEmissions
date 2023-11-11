@@ -76,11 +76,6 @@ The flag `--ncores` can also be added to analyse the database using multiple pro
 ## Generating plots:
 Navigate to source directory:
 ```
-cd /CloudSensitivityToEmissions/src/
-```
-
-```
-cd /CloudSensitivityToEmissions/src/
 python3 main.py
 ```
 
