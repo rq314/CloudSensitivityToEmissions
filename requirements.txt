@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+pysolar
+tqdm
+argparse
+multiprocessing
+matplotlib
+pyrcel
