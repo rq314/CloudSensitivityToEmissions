@@ -58,9 +58,9 @@ python3 generate_dat_files.py --exp bri_arg --proct
 The flag `--ncores` can also be added to analyse the database using multiple processes.
 
 Output files : 
--`data/processed/all_ships/all_ships_dataframe_processed_bri_arg.csv`, 
--`data/processed/only_tracks/only_tracks_dataframe_processed_bri_arg.csv`,
--`data/processed/only_tracks/correlations_bri_arg.csv` .
+- `data/processed/all_ships/all_ships_dataframe_processed_bri_arg.csv`, 
+- `data/processed/only_tracks/only_tracks_dataframe_processed_bri_arg.csv`,
+- `data/processed/only_tracks/correlations_bri_arg.csv` .
 
 ### To run MBN:
 ```
@@ -69,9 +69,9 @@ python3 generate_dat_files.py --exp bri_mbn --proct
 The flag `--ncores` can also be added to analyse the database using multiple processes.
 
 Output files : 
--`data/processed/all_ships/all_ships_dataframe_processed_bri_mbn.csv`, 
--`data/processed/only_tracks/only_tracks_dataframe_processed_bri_mbn.csv`,
--`data/processed/only_tracks/correlations_bri_mbn.csv` .
+- `data/processed/all_ships/all_ships_dataframe_processed_bri_mbn.csv`, 
+- `data/processed/only_tracks/only_tracks_dataframe_processed_bri_mbn.csv`,
+- `data/processed/only_tracks/correlations_bri_mbn.csv` .
 
 ### To run RW:
 ```
@@ -80,16 +80,16 @@ python3 generate_dat_files.py --exp bri_lkup --proct
 The flag `--ncores` can also be added to analyse the database using multiple processes.
 
 Output files : 
--`data/processed/all_ships/all_ships_dataframe_processed_bri_lkup.csv`, 
--`data/processed/only_tracks/only_tracks_dataframe_processed_bri_lkup.csv`,
--`data/processed/only_tracks/correlations_bri_lkup.csv` .
+- `data/processed/all_ships/all_ships_dataframe_processed_bri_lkup.csv`, 
+- `data/processed/only_tracks/only_tracks_dataframe_processed_bri_lkup.csv`,
+- `data/processed/only_tracks/correlations_bri_lkup.csv` .
 
 ### To estimate the sensitivities:
 ```
 python3 generate_sensitivities.py
 ```
 Output files : 
--`data/sensitivity_acruise.csv`
+- `data/sensitivity_acruise.csv`
 
 ## Generating plots:
 
