@@ -97,7 +97,7 @@ Navigate to the source directory:
 ```
 cd src
 ```
-
+To generate plots:
 ```
 python3 main.py
 ```
