@@ -26,7 +26,7 @@ Add the `only_track_data_ctrc_anonymous.csv` file to `data/raw`
 
 ## Input file
 
-The input file for the ship track data needs to be called: `only_track_data_ctrc_anonymous.csv` and has the following input columns:
+The input file for the ship track data needs to be called `only_track_data_ctrc_anonymous.csv` and it has to have the following input columns:
 
 - (`float`)`trackno`: Ship track identifier (-)
 - (`float`)`sox`: SO$`_x`$ emission rate (kg s$`^{-1}`$)
