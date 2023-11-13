@@ -102,6 +102,13 @@ To generate plots:
 python3 main.py
 ```
 
+Output plots:
+- `figs/sensitivity_study_.pdf`
+- `figs/fit_up_boxplot_.pdf`
+- `figs/kohler_all_hybrid.pdf`
+- `figs/ctrc_all_hybrid.pdf`
+- `figs/all_correlations_coupled.pdf`
+- `figs/sensitivity_studybreakdown_.pdf`
 
 
 
