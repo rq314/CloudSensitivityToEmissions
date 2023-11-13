@@ -40,26 +40,6 @@ def plot_sensitivitystudy(paper_figures_dir, sens_df, plot_title, fontsize, line
 
     plt.savefig(plot_fname(paper_figures_dir, f"_{plot_title}"), dpi=300)
 
-    # Plots scatter plot of sensitivities for all parameters vs uncertainties with labelling point with parameter name
-    fig, ax = plt.subplots(1, 1, figsize=(8.9,6))
-    
-    ax.scatter(sens_df['Deltap_perc'][:-2].to_list(), sens_df['sens_arg'][:-2].to_list(), color=(196/255, 121/255, 0/255), label = 'ARG')
-    ax.scatter(sens_df['Deltap_perc'][:-2].to_list(), sens_df['sens_mbn'][:-2].to_list(), color=(112 / 255, 160 / 255, 205 / 255), label = 'MBN')
-    ax.scatter(sens_df['Deltap_perc'][:-2].to_list(), sens_df['sens_lkup'][:-2].to_list(), color=(0 / 255, 79 / 255, 0 / 255), label = 'RW')
-
-    for i, txt in enumerate(longnames):
-        ax.annotate(txt, (sens_df['Deltap_perc'][:-2].to_list()[i], sens_df['sens_arg'][:-2].to_list()[i]), fontsize=fontsize)
-        ax.annotate(txt, (sens_df['Deltap_perc'][:-2].to_list()[i], sens_df['sens_mbn'][:-2].to_list()[i]), fontsize=fontsize)
-        ax.annotate(txt, (sens_df['Deltap_perc'][:-2].to_list()[i], sens_df['sens_lkup'][:-2].to_list()[i]), fontsize=fontsize)
-
-    
-    
-    ax.set_xlabel(r"$\Delta p_i$ [$\%$]", fontsize=fontsize)
-    ax.set_ylabel(r"$\frac{\partial \epsilon}{\partial p_i} $", fontsize=fontsize)
-    ax.tick_params(axis='x', labelsize=fontsize)
-    ax.tick_params(axis='y', labelsize=fontsize)
-    ax.legend(fontsize=fontsize)
-
     # Plots bar plots of the breakdown of sensitivities
     labels_subplots = ['(a)', '(b)', '(c)']
     scattersize = 15.0
@@ -90,7 +70,6 @@ def plot_sensitivitystudy(paper_figures_dir, sens_df, plot_title, fontsize, line
 
 
     # Plots bar plots of the sensitivities of all parameters again
-
     axs[2].bar(ind -0.3, sens_df['sens_arg'][:-2].to_list(), color=(196/255, 121/255, 0/255), width = 0.2, label = 'ARG')
     axs[2].bar(ind -0.1, sens_df['sens_mbn'][:-2].to_list(), color=(112 / 255, 160 / 255, 205 / 255), width = 0.2, label = 'MBN')
     axs[2].bar(ind + 0.1 , sens_df['sens_lkup'][:-2].to_list(), color=(0 / 255, 79 / 255, 0 / 255), width = 0.2, label = 'RW')
