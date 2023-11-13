@@ -99,7 +99,7 @@ cd src
 ```
 To generate plots:
 ```
-python3 main.py
+python3 generate_plots.py
 ```
 
 Output plots:
