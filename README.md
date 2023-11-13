@@ -26,7 +26,7 @@ Add the `only_track_data_ctrc_anonymous.csv` file to `data/raw`
 
 ## Input file
 
-The input file for the ship track data needs to be called: `only_track_data_ctrc_anonymous.csv` and has the following input columns:
+The input file for the ship track data needs to be called `only_track_data_ctrc_anonymous.csv` and it has to have the following input columns:
 
 - (`float`)`trackno`: Ship track identifier (-)
 - (`float`)`sox`: SO$`_x`$ emission rate (kg s$`^{-1}`$)
@@ -47,12 +47,12 @@ The input file for the ship track data needs to be called: `only_track_data_ctrc
 ## Generating output files:
 
 Navigate to the source directory:
-```
+```bash
 cd src
 ```
 
 ### To run ARG:
-```
+```bash
 python3 generate_dat_files.py --exp bri_arg --proct
 ```
 The flag `--ncores` can also be added to analyse the database using multiple processes.
@@ -63,7 +63,7 @@ Output files :
 - `data/processed/only_tracks/correlations_bri_arg.csv` .
 
 ### To run MBN:
-```
+```bash
 python3 generate_dat_files.py --exp bri_mbn --proct
 ```
 The flag `--ncores` can also be added to analyse the database using multiple processes.
@@ -74,7 +74,7 @@ Output files :
 - `data/processed/only_tracks/correlations_bri_mbn.csv` .
 
 ### To run RW:
-```
+```bash
 python3 generate_dat_files.py --exp bri_lkup --proct
 ```
 The flag `--ncores` can also be added to analyse the database using multiple processes.
@@ -85,7 +85,7 @@ Output files :
 - `data/processed/only_tracks/correlations_bri_lkup.csv` .
 
 ### To estimate the sensitivities:
-```
+```bash
 python3 generate_sensitivities.py
 ```
 Output files : 
@@ -94,11 +94,11 @@ Output files :
 ## Generating plots:
 
 Navigate to the source directory:
-```
+```bash
 cd src
 ```
 To generate plots:
-```
+```bash
 python3 generate_plots.py
 ```
 
