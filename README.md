@@ -40,7 +40,7 @@ The input file for the ship track data needs to be called `only_track_data_ctrc_
 - (`float`)`lwp`: Liquid water path (g m$`^{-2}`$)
 - (`float`)`t1000`: Temperature at 1000 hPa (K)
 - (`float`)`LTS`: Low tropospheric stability (K)
-- (`float`)`ctt`: Cloud top temperature (m)
+- (`float`)`ctt`: Cloud top temperature (K)
 - (`float`)`ctrc`: Cloud top radiative cooling (W m$`^{-2}`$)
 - (`bool`)`is_coupled`: Flag for cloud coupling according to cloud base height indicator (`cbh`<1000 m)
 
