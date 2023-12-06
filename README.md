@@ -1,4 +1,5 @@
 # CloudSensitivityToEmissions
+[![DOI](https://zenodo.org/badge/717182360.svg)](https://zenodo.org/doi/10.5281/zenodo.10276889)
 
 Here is the combined plume-parcel model, along with processing scripts.
 
